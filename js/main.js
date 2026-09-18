@@ -1,48 +1,46 @@
 /**
- * Maulik Parmar - Portfolio Interactivity
- * Focus: Clean filter tabs, modal lightbox, mobile navigation, and smooth scrolling.
+ * Maulik Parmar - Executive Portfolio Scripts
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initMobileNav();
-  initProjectFilters();
-  initNavScroll();
+  initMobileMenu();
+  initCategoryFilters();
   initModalListeners();
 });
 
-/* Mobile Navigation */
-function initMobileNav() {
-  const toggleBtn = document.getElementById('mobile-toggle');
-  const navMenu = document.getElementById('nav-menu');
+/* Mobile Menu Toggle */
+function initMobileMenu() {
+  const toggle = document.getElementById('nav-toggle');
+  const links = document.getElementById('nav-links');
 
-  if (toggleBtn && navMenu) {
-    toggleBtn.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
     });
 
-    // Close mobile nav when clicking a link
-    navMenu.querySelectorAll('.nav-link').forEach(link => {
+    links.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
+        links.classList.remove('open');
       });
     });
   }
 }
 
-/* Project Category Filters */
-function initProjectFilters() {
+/* Category Filter Tabs */
+function initCategoryFilters() {
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
+  const cards = document.querySelectorAll('.case-card');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
-      const filterValue = btn.getAttribute('data-filter');
+      const filter = btn.getAttribute('data-filter');
 
-      projectCards.forEach(card => {
-        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+      cards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
           card.style.display = 'grid';
         } else {
           card.style.display = 'none';
@@ -52,57 +50,45 @@ function initProjectFilters() {
   });
 }
 
-/* Smooth Navigation & Scroll Spy */
-function initNavScroll() {
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-link');
-
-  window.addEventListener('scroll', () => {
-    const scrollY = window.pageYOffset;
-
-    sections.forEach(section => {
-      const sectionHeight = section.offsetHeight;
-      const sectionTop = section.offsetTop - 120;
-      const sectionId = section.getAttribute('id');
-
-      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        navLinks.forEach(link => {
-          if (link.getAttribute('href') === `#${sectionId}`) {
-            link.classList.add('active');
-          } else {
-            link.classList.remove('active');
-          }
-        });
-      }
-    });
-  });
+/* Switch Main Viewport Image on Thumbnail Click */
+function switchMainImage(targetId, newSrc, newAlt) {
+  const targetImg = document.getElementById(targetId);
+  if (targetImg) {
+    targetImg.src = newSrc;
+    if (newAlt) targetImg.alt = newAlt;
+    
+    // Also update the onclick on the parent window-viewport so clicking to enlarge shows the newly selected image
+    const parentViewport = targetImg.closest('.window-viewport');
+    if (parentViewport) {
+      parentViewport.setAttribute('onclick', `openLightbox('${newSrc}', '${newAlt}')`);
+    }
+  }
 }
 
 /* Lightbox Modal */
-function openLightbox(imageSrc, title) {
-  const modalBackdrop = document.getElementById('modal-backdrop');
-  const modalImage = document.getElementById('modal-image');
-  const modalTitle = document.getElementById('modal-title');
+function openLightbox(src, title) {
+  const backdrop = document.getElementById('lightbox-backdrop');
+  const img = document.getElementById('lightbox-image');
+  const titleEl = document.getElementById('lightbox-title');
 
-  if (modalBackdrop && modalImage) {
-    modalImage.src = imageSrc;
-    if (modalTitle && title) {
-      modalTitle.textContent = title;
-    }
-    modalBackdrop.classList.add('active');
+  if (backdrop && img) {
+    img.src = src;
+    if (titleEl && title) titleEl.textContent = title;
+    backdrop.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
 }
 
-function closeLightbox() {
-  const modalBackdrop = document.getElementById('modal-backdrop');
-  const modalImage = document.getElementById('modal-image');
+function closeLightbox(e) {
+  if (e && e.target && e.target.closest('.lightbox-modal') && !e.target.classList.contains('lightbox-close')) {
+    return;
+  }
+  const backdrop = document.getElementById('lightbox-backdrop');
+  const img = document.getElementById('lightbox-image');
 
-  if (modalBackdrop) {
-    modalBackdrop.classList.remove('active');
-    if (modalImage) {
-      modalImage.src = '';
-    }
+  if (backdrop) {
+    backdrop.classList.remove('open');
+    if (img) img.src = '';
     document.body.style.overflow = '';
   }
 }
@@ -115,6 +101,7 @@ function initModalListeners() {
   });
 }
 
-// Attach to window for inline onclick attributes
+// Expose globals for inline attributes
+window.switchMainImage = switchMainImage;
 window.openLightbox = openLightbox;
 window.closeLightbox = closeLightbox;
