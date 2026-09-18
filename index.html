@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio of Maulik Parmar, Data Analyst & BI Developer with 6.5+ years experience in Power BI, SQL, Python, and regulatory financial analytics based in London, UK.">
+  <meta name="description" content="Maulik Parmar - Data Analyst & BI Developer Portfolio. 6.5+ years of enterprise experience in Power BI, SQL, Python, and regulatory financial analytics based in London, UK.">
   <meta name="author" content="Maulik Parmar">
   <title>Maulik Parmar | Data Analyst & BI Developer</title>
   <link rel="stylesheet" href="css/styles.css">
@@ -11,167 +11,432 @@
 </head>
 <body>
 
-  <!-- Navigation Header -->
-  <header class="site-header">
-    <div class="container nav-wrapper">
-      <a href="#" class="brand-logo" id="nav-brand">Maulik<span>Parmar</span></a>
+  <!-- Background Glowing Orbs -->
+  <div class="ambient-orb ambient-orb-1"></div>
+  <div class="ambient-orb ambient-orb-2"></div>
+
+  <!-- Top Telemetry HUD Bar -->
+  <header class="hud-bar">
+    <div class="container hud-content">
+      <a href="#" class="brand-logo" id="hud-brand">
+        MP <span>//</span> ANALYTICS
+      </a>
+
+      <div class="hud-metrics">
+        <div class="hud-stat">
+          <span>EXP:</span>
+          <span class="hud-stat-val">6.5+ YRS</span>
+        </div>
+        <div class="hud-stat">
+          <span>REPOS:</span>
+          <span class="hud-stat-val">5 PRODUCTION</span>
+        </div>
+        <div class="hud-stat">
+          <span>DATA:</span>
+          <span class="hud-stat-val">2.5M+ ROWS</span>
+        </div>
+        <div class="badge">
+          <span class="badge-dot"></span>
+          UK WORK RIGHTS (PSW / IMMEDIATE)
+        </div>
+      </div>
+
       <ul class="nav-links">
-        <li><a href="#projects" id="nav-link-projects">Projects</a></li>
-        <li><a href="#experience" id="nav-link-experience">Experience</a></li>
-        <li><a href="#skills" id="nav-link-skills">Skills</a></li>
-        <li><a href="#education" id="nav-link-education">Education</a></li>
-        <li><a href="https://github.com/WarWolf95" target="_blank" rel="noopener noreferrer" class="nav-cta" id="nav-btn-github">GitHub</a></li>
+        <li><a href="#philosophy" class="nav-link">01//PHILOSOPHY</a></li>
+        <li><a href="#stack" class="nav-link">02//STACK</a></li>
+        <li><a href="#projects" class="nav-link">03//PROJECTS</a></li>
+        <li><a href="#timeline" class="nav-link">04//TIMELINE</a></li>
+        <li><a href="#connect" class="nav-link">05//CONNECT</a></li>
       </ul>
     </div>
   </header>
 
-  <!-- Hero Section -->
   <main>
-    <section class="hero-section" id="hero">
-      <div class="container hero-content">
-        <div class="hero-tag">London, United Kingdom</div>
-        <h1 class="hero-title">Data Analyst & <span class="highlight">BI Developer</span></h1>
-        <p class="hero-description">
-          Over 6.5 years of enterprise experience at Numerator delivering Power BI reporting suites, writing complex SQL for multi-million-row databases, and automating operational pipelines in Python. Specializing in financial services, regulatory reporting (FCA Consumer Duty), credit risk data, and market analytics.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary" id="btn-hero-projects">View Case Studies</a>
-          <a href="https://github.com/WarWolf95" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btn-hero-github">GitHub Repositories</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btn-hero-linkedin">LinkedIn Profile</a>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="badge" style="margin-bottom: 18px;">
+            LONDON, UNITED KINGDOM
+          </div>
+          <h1 class="hero-title">
+            Data Analyst & <br>
+            <span class="text-gradient">BI Developer</span>
+          </h1>
+          <p class="hero-desc">
+            Over 6.5 years of enterprise experience at <strong>Numerator</strong> delivering production Power BI reporting suites, writing complex SQL across multi-million-row databases, and automating operational data pipelines with Python. Specializing in financial services, regulatory reporting (FCA Consumer Duty), credit risk data, and market analytics.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="btn-hero-projects">Explore Repositories</a>
+            <a href="https://github.com/WarWolf95" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-hero-github">GitHub Profile</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-hero-linkedin">LinkedIn</a>
+          </div>
         </div>
 
-        <div class="metrics-strip">
-          <div class="metric-item">
-            <h3>6.5+ Yrs</h3>
-            <p>Enterprise Analytics</p>
-          </div>
-          <div class="metric-item">
-            <h3>15+ Accounts</h3>
-            <p>Retail Client Portfolios</p>
-          </div>
-          <div class="metric-item">
-            <h3>35% Faster</h3>
-            <p>Python Pipeline ETL</p>
-          </div>
-          <div class="metric-item">
-            <h3>MSc Data Sci</h3>
-            <p>Coventry University</p>
+        <!-- Terminal Simulator Card -->
+        <div class="hero-right">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <div class="terminal-title">analyst@parmar-terminal: ~</div>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+              <div class="t-line">
+                <span class="t-prompt">analyst@parmar:~$</span> <span class="t-cmd">whoami</span>
+              </div>
+              <div class="t-line">
+                <div class="t-res">Maulik Parmar - Data Analyst & BI Developer (London, UK)</div>
+              </div>
+              <div class="t-line">
+                <span class="t-prompt">analyst@parmar:~$</span> <span class="t-cmd">cat summary.log</span>
+              </div>
+              <div class="t-line">
+                <div class="t-res">
+                  - 6.5+ years experience at Numerator (US Consumer Intelligence)<br>
+                  - Managed analytics for 15+ enterprise retail client accounts<br>
+                  - Cut operational reporting turnaround times by 35% via Python & SQL<br>
+                  - MSc Data Science (Coventry University) | BEng Electrical Engineering
+                </div>
+              </div>
+              <div class="t-line">
+                <span class="t-prompt">analyst@parmar:~$</span> <span class="t-cmd">help</span>
+              </div>
+              <div class="t-line">
+                <div class="t-res">
+                  Type <span class="t-accent">skills</span>, <span class="t-accent">projects</span>, <span class="t-accent">experience</span>, or <span class="t-accent">contact</span>
+                </div>
+              </div>
+            </div>
+            <div class="terminal-input-row">
+              <span class="t-prompt">analyst@parmar:~$</span>
+              <input type="text" class="terminal-input" id="terminalInput" placeholder="type 'skills' or 'projects'..." autocomplete="off" spellcheck="false">
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="section" id="projects">
+    <!-- Module 0X1 - Philosophy & Performance Metrics -->
+    <section class="section" id="philosophy">
       <div class="container">
         <div class="section-header">
-          <div class="section-label">Selected Portfolio Work</div>
-          <h2 class="section-title">Production Analytics Projects</h2>
+          <span class="section-module-tag">01 // ANALYTICAL PHILOSOPHY & IMPACT</span>
+          <h2 class="section-title">Core Operating Principles</h2>
           <p class="section-subtitle">
-            Open-source data pipelines, Power BI dashboards, statistical tests, and regulatory compliance models built with Python, SQL, and Power BI. Click any image to view in full resolution.
+            How I approach data problems: robust dimensional modeling, strict anti-leakage controls, and clear stakeholder delivery.
           </p>
         </div>
 
-        <!-- Filter Tabs -->
-        <div class="filter-tabs" id="project-filters">
-          <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
-          <button class="filter-btn" data-filter="powerbi" id="filter-powerbi">Power BI & Dashboards</button>
-          <button class="filter-btn" data-filter="regulatory" id="filter-regulatory">Regulatory & Financial</button>
-          <button class="filter-btn" data-filter="python" id="filter-python">Python & Statistics</button>
+        <div class="philosophy-grid">
+          <div class="card">
+            <div class="card-icon">01</div>
+            <h3 class="card-title">Star Schema Dimensional Modeling</h3>
+            <p class="card-desc">
+              Data must be modeled for analytical clarity and reporting speed. Whether building in SQLite, DuckDB, or MySQL, I structure raw transactions into normalized fact tables and clean dimensional entities, enabling fast Power BI DAX execution without recursive filtering overhead.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">02</div>
+            <h3 class="card-title">Strict Anti-Leakage & Governance</h3>
+            <p class="card-desc">
+              In risk scoring and regulatory reporting, using post-origination or unobservable data creates dangerous false confidence. Every pipeline enforces chronological boundary splits and segregates application-time fields from downstream outcomes.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">03</div>
+            <h3 class="card-title">Empirical Benchmark Calibration</h3>
+            <p class="card-desc">
+              Internal metrics are only as good as the market context they live in. My work regularly calibrates internal data against published UK government statistics, including FCA General Insurance Value Measures, FOS Ombudsman uphold statistics, and ONS ASHE wage medians.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">04</div>
+            <h3 class="card-title">Decision-Ready Delivery</h3>
+            <p class="card-desc">
+              Complex SQL queries and statistical models must translate directly into tools stakeholders can use. I deliver findings through structured Power BI reports, automated executive markdown briefs, and programmatic Excel workbooks with native what-if modeling.
+            </p>
+          </div>
         </div>
 
-        <!-- Projects Grid -->
+        <!-- Interactive SVG Chart Container -->
+        <div class="chart-container">
+          <div class="chart-header">
+            <div>
+              <span class="mono" style="color: var(--cyan-accent); font-size: 0.8rem; letter-spacing: 0.1em; display: block; margin-bottom: 4px;">EMPIRICAL PERFORMANCE TELEMETRY</span>
+              <h3 class="card-title" id="chartActiveTitle" style="margin-bottom: 4px;">ETL Operational Pipeline Latency (Turnaround Hours)</h3>
+              <p class="mono" id="chartActiveStat" style="color: var(--cyan-accent); font-weight: 700; font-size: 1.1rem;">-35% Processing Time</p>
+            </div>
+            <div class="chart-metrics-toggle">
+              <button class="metric-btn active" data-metric="latency" id="metric-latency">Pipeline Latency</button>
+              <button class="metric-btn" data-metric="retention" id="metric-retention">Client Retention</button>
+              <button class="metric-btn" data-metric="scorecard" id="metric-scorecard">Scorecard Parity</button>
+            </div>
+          </div>
+
+          <!-- SVG Visual Curve -->
+          <svg class="chart-svg" viewBox="0 0 1200 220" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#00f2fe" stop-opacity="0.0"/>
+              </linearGradient>
+            </defs>
+            <line x1="30" y1="200" x2="1170" y2="200" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <line x1="30" y1="130" x2="1170" y2="130" stroke="rgba(255,255,255,0.04)" stroke-dasharray="4,4"/>
+            <line x1="30" y1="60" x2="1170" y2="60" stroke="rgba(255,255,255,0.04)" stroke-dasharray="4,4"/>
+            
+            <path id="chartAreaPath" fill="url(#chartGrad)" d="M 30,170 Q 180,165 320,130 T 600,90 T 900,45 T 1150,25 L 1150,200 L 30,200 Z" style="transition: all 0.5s ease;"/>
+            <path id="chartDataPath" fill="none" stroke="#00f2fe" stroke-width="3" d="M 30,170 Q 180,165 320,130 T 600,90 T 900,45 T 1150,25" style="transition: all 0.5s ease;"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 0X2 - Technical Stack Matrix -->
+    <section class="section" id="stack">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-module-tag">02 // TECHNICAL ARSENAL</span>
+          <h2 class="section-title">Technical Stack Matrix</h2>
+          <p class="section-subtitle">
+            Core toolset across database querying, reporting, data manipulation, and quality governance.
+          </p>
+        </div>
+
+        <div class="stack-filters">
+          <button class="stack-filter-btn active" data-stack-filter="all" id="stack-filter-all">All Capabilities</button>
+          <button class="stack-filter-btn" data-stack-filter="bi" id="stack-filter-bi">BI & Visualization</button>
+          <button class="stack-filter-btn" data-stack-filter="sql" id="stack-filter-sql">Databases & SQL</button>
+          <button class="stack-filter-btn" data-stack-filter="py" id="stack-filter-py">Python & Analytics</button>
+          <button class="stack-filter-btn" data-stack-filter="gov" id="stack-filter-gov">Governance & Quality</button>
+        </div>
+
+        <div class="stack-grid">
+          <!-- BI -->
+          <div class="stack-item" data-category="bi">
+            <div class="stack-icon-pill pill-bi">PBI</div>
+            <div class="stack-info">
+              <h4>Power BI Desktop</h4>
+              <p>Advanced DAX, Star Schema, Power Query (M)</p>
+            </div>
+          </div>
+          <div class="stack-item" data-category="bi">
+            <div class="stack-icon-pill pill-bi">XLS</div>
+            <div class="stack-info">
+              <h4>Microsoft Excel</h4>
+              <p>Power Pivot, VBA, What-If Modeling, Formulas</p>
+            </div>
+          </div>
+          <div class="stack-item" data-category="bi">
+            <div class="stack-icon-pill pill-bi">TAB</div>
+            <div class="stack-info">
+              <h4>Tableau Desktop</h4>
+              <p>Interactive Dashboards & Visual Analytics</p>
+            </div>
+          </div>
+
+          <!-- SQL -->
+          <div class="stack-item" data-category="sql">
+            <div class="stack-icon-pill pill-sql">SQL</div>
+            <div class="stack-info">
+              <h4>MySQL</h4>
+              <p>Complex CTEs, Window Functions, Index Tuning</p>
+            </div>
+          </div>
+          <div class="stack-item" data-category="sql">
+            <div class="stack-icon-pill pill-sql">PG</div>
+            <div class="stack-info">
+              <h4>PostgreSQL</h4>
+              <p>Relational Schemas, Constraints, Analytical Views</p>
+            </div>
+          </div>
+          <div class="stack-item" data-category="sql">
+            <div class="stack-icon-pill pill-sql">LITE</div>
+            <div class="stack-info">
+              <h4>SQLite & DuckDB</h4>
+              <p>Embedded Analytics & High-Speed Star Schema Engines</p>
+            </div>
+          </div>
+
+          <!-- Python -->
+          <div class="stack-item" data-category="py">
+            <div class="stack-icon-pill pill-py">POL</div>
+            <div class="stack-info">
+              <h4>Polars & Pandas</h4>
+              <p>High-Throughput Tabular ETL & Data Transformation</p>
+            </div>
+          </div>
+          <div class="stack-item" data-category="py">
+            <div class="stack-icon-pill pill-py">STAT</div>
+            <div class="stack-info">
+              <h4>Statsmodels & SciPy</h4>
+              <p>Hypothesis Testing, A/B Power, GLM Regressions</p>
+            </div>
+          </div>
+          <div class="stack-item" data-category="py">
+            <div class="stack-icon-pill pill-py">SKL</div>
+            <div class="stack-info">
+              <h4>Scikit-Learn & LightGBM</h4>
+              <p>WoE Binning, Scorecard Scaling, Evaluation Curves</p>
+            </div>
+          </div>
+
+          <!-- Governance -->
+          <div class="stack-item" data-category="gov">
+            <div class="stack-icon-pill pill-gov">FCA</div>
+            <div class="stack-info">
+              <h4>FCA Regulatory Standards</h4>
+              <p>Consumer Duty (PS22/9, FG22/5), MCOB, FOS Data</p>
+            </div>
+          </div>
+          <div class="stack-item" data-category="gov">
+            <div class="stack-icon-pill pill-gov">GDPR</div>
+            <div class="stack-info">
+              <h4>UK GDPR & DPA 2018</h4>
+              <p>Data Privacy, Anonymisation, Governance Auditing</p>
+            </div>
+          </div>
+          <div class="stack-item" data-category="gov">
+            <div class="stack-icon-pill pill-gov">TEST</div>
+            <div class="stack-info">
+              <h4>Git & PyTest CI/CD</h4>
+              <p>Automated Quality Verification & Schema Assertions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 0X3 - Production Case Studies -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-module-tag">03 // PRODUCTION REPOSITORIES & CASE STUDIES</span>
+          <h2 class="section-title">Production Analytics Case Studies</h2>
+          <p class="section-subtitle">
+            Five fully functional, open-source repositories demonstrating data pipelines, Power BI dashboards, statistical tests, and regulatory compliance frameworks.
+          </p>
+        </div>
+
         <div class="projects-grid">
 
-          <!-- Project 1: Consumer Duty -->
-          <article class="project-card featured-wide" data-category="powerbi regulatory">
+          <!-- Project 1: Consumer Duty (Featured Wide) -->
+          <article class="project-card featured-wide" data-category="bi gov">
             <div class="project-media-wrapper">
               <div class="project-media-grid">
-                <img src="assets/images/consumer-duty-p1.jpg" alt="FCA Consumer Duty Dashboard: Executive Overview Page" class="project-thumb">
-                <img src="assets/images/consumer-duty-p2.jpg" alt="FCA Consumer Duty Dashboard: Price and Fair Value Assessment" class="project-thumb">
-                <img src="assets/images/consumer-duty-p3.jpg" alt="FCA Consumer Duty Dashboard: Customer Support and SLA Monitoring" class="project-thumb">
-                <img src="assets/images/consumer-duty-p4.jpg" alt="FCA Consumer Duty Dashboard: Vulnerable Customer Outcome Disparity" class="project-thumb">
+                <img src="assets/images/consumer-duty-p1.jpg" alt="FCA Consumer Duty: Executive Overview Page" class="project-thumb">
+                <img src="assets/images/consumer-duty-p2.jpg" alt="FCA Consumer Duty: Price and Fair Value Outcome Assessment" class="project-thumb">
+                <img src="assets/images/consumer-duty-p3.jpg" alt="FCA Consumer Duty: Consumer Support & Complaints Resolution" class="project-thumb">
+                <img src="assets/images/consumer-duty-p4.jpg" alt="FCA Consumer Duty: Vulnerable Customer Outcome Disparity" class="project-thumb">
               </div>
               <span class="zoom-badge">Click image to enlarge</span>
             </div>
             <div class="project-body">
-              <div class="project-category">Power BI • SQL Star Schema • Conduct Risk</div>
+              <div class="project-meta">
+                <span class="project-code-tag">SYSTEM 01 // CONDUCT RISK & POWER BI</span>
+                <span class="mono" style="font-size: 0.78rem; color: var(--text-dim);">SQLITE / STAR SCHEMA</span>
+              </div>
               <h3 class="project-title">FCA Consumer Duty Outcome Monitoring Platform</h3>
               <p class="project-summary">
-                An end-to-end regulatory intelligence platform designed for UK retail financial services to monitor, audit, and evidence customer outcomes under FCA mandate PS22/9 / FG22/5 across 50,000 customer records and 75,000 policy sales.
+                An end-to-end regulatory analytics platform for UK retail financial services, built to evidence customer outcomes across four statutory areas defined by FCA PS22/9: Products & Services, Price & Value, Consumer Support, and Vulnerable Customer Outcome Disparity.
               </p>
-              <ul class="project-highlights">
-                <li>Automated SQLite data pipeline extracting and modeling 4 star-schema fact tables and 5 dimensions.</li>
-                <li>Directly benchmarked internal company metrics against published FCA General Insurance Value Measures and Financial Ombudsman Service (FOS) uphold rates.</li>
-                <li>Designed a 4-page Power BI executive suite following an official FCA palette (`#701B45`) with custom DAX measures for SLA compliance, claims loss ratios, and vulnerability disparity gaps.</li>
+              <div class="project-callout-box">
+                <div class="callout-stat">50,000</div>
+                <div class="callout-label">Customer profiles and 75,000 policy records benchmarked against official FCA General Insurance Value Measures and FOS ombudsman uphold rates.</div>
+              </div>
+              <ul class="project-bullets">
+                <li>Automated SQLite data engineering pipeline structuring raw staging tables into an optimized 4-fact, 5-dimension Star Schema.</li>
+                <li>Built a 4-page Power BI executive suite designed with an official FCA Claret theme (`#701B45`) and verified DAX measures for SLA compliance, loss ratios, and vulnerability gap tracking.</li>
+                <li>Validated through an 8-test automated pytest suite asserting referential integrity, regional distributions, and conduct risk thresholds.</li>
               </ul>
               <div class="project-tags">
                 <span class="tag">Power BI</span>
                 <span class="tag">DAX</span>
-                <span class="tag">SQL Star Schema</span>
-                <span class="tag">SQLite</span>
+                <span class="tag">SQLite Star Schema</span>
                 <span class="tag">Python</span>
                 <span class="tag">FCA PS22/9</span>
+                <span class="tag">GitHub Actions</span>
               </div>
               <div class="project-footer">
-                <a href="https://github.com/WarWolf95/consumer-duty-analytics" target="_blank" rel="noopener noreferrer" class="project-link" id="link-consumer-duty">View Repository & Documentation &rarr;</a>
+                <a href="https://github.com/WarWolf95/consumer-duty-analytics" target="_blank" rel="noopener noreferrer" class="project-link" id="link-repo-consumer-duty">Inspect Repository on GitHub &rarr;</a>
               </div>
             </div>
           </article>
 
           <!-- Project 2: Pricing A/B Test -->
-          <article class="project-card" data-category="regulatory python">
+          <article class="project-card" data-category="py gov">
             <div class="project-media-wrapper">
               <div class="project-media-grid">
-                <img src="assets/images/ab-test-love-plot.png" alt="Pre-Experiment Covariate Balance Love Plot (SMD checks)" class="project-thumb">
-                <img src="assets/images/ab-test-funnel.png" alt="Conversion Funnel Progression by Experimental Arm" class="project-thumb">
+                <img src="assets/images/ab-test-love-plot.png" alt="Covariate Balance Diagnostic Love Plot (SMD < 0.05)" class="project-thumb">
+                <img src="assets/images/ab-test-funnel.png" alt="Conversion Funnel Progression Across Experimental Arms" class="project-thumb">
               </div>
               <span class="zoom-badge">Click image to enlarge</span>
             </div>
             <div class="project-body">
-              <div class="project-category">Causal Inference • A/B Testing • Excel</div>
+              <div class="project-meta">
+                <span class="project-code-tag">SYSTEM 02 // CAUSAL INFERENCE</span>
+                <span class="mono" style="font-size: 0.78rem; color: var(--text-dim);">POLARS / STATSMODELS</span>
+              </div>
               <h3 class="project-title">UK Motor Insurance Pricing A/B Test</h3>
               <p class="project-summary">
-                A rigorous, pre-registered pricing experiment on 124,000 visitor sessions evaluating conversion price elasticity while monitoring portfolio loss ratios and vulnerable customer outcomes under FCA Consumer Duty rules.
+                A pre-registered experimental pricing trial evaluating price elasticity across 124,000 visitor sessions, assessing conversion sensitivity while auditing portfolio loss ratios and vulnerable customer outcomes.
               </p>
-              <ul class="project-highlights">
-                <li>Pre-experiment power analysis establishing sample size for a Minimum Detectable Effect of 0.50 pp lift at 80% power.</li>
-                <li>Detected a statistically significant +0.60 pp conversion lift (p = 6.62e-5) using two-sample proportion tests with zero adverse vulnerability disparities.</li>
-                <li>Programmatically compiled an 8-sheet stakeholder Excel workbook with native formulas, conditional formatting, and what-if sensitivity analysis.</li>
+              <div class="project-callout-box">
+                <div class="callout-stat">+0.60 pp</div>
+                <div class="callout-label">Statistically significant conversion lift (p = 6.62e-5) with Standardised Mean Differences strictly within &plusmn;0.05 balance bounds.</div>
+              </div>
+              <ul class="project-bullets">
+                <li>Pre-experiment power analysis calculating required sample size for a Minimum Detectable Effect of 0.50 pp absolute lift at 80% power.</li>
+                <li>Heterogeneous treatment effect (CATE) analysis with Benjamini-Hochberg False Discovery Rate control to verify non-discriminatory pricing.</li>
+                <li>Programmatically compiled an 8-sheet stakeholder Excel workbook using native formulas, conditional formatting, and what-if sensitivity analysis.</li>
               </ul>
               <div class="project-tags">
                 <span class="tag">Python</span>
                 <span class="tag">Polars</span>
                 <span class="tag">Statsmodels</span>
                 <span class="tag">SciPy</span>
-                <span class="tag">Excel Modeling</span>
                 <span class="tag">A/B Testing</span>
+                <span class="tag">Programmatic Excel</span>
               </div>
               <div class="project-footer">
-                <a href="https://github.com/WarWolf95/pricing-ab-test" target="_blank" rel="noopener noreferrer" class="project-link" id="link-pricing-ab">View Repository & Documentation &rarr;</a>
+                <a href="https://github.com/WarWolf95/pricing-ab-test" target="_blank" rel="noopener noreferrer" class="project-link" id="link-repo-pricing-ab">Inspect Repository on GitHub &rarr;</a>
               </div>
             </div>
           </article>
 
-          <!-- Project 3: Workforce Intelligence -->
-          <article class="project-card" data-category="powerbi regulatory">
+          <!-- Project 3: Workforce Planning -->
+          <article class="project-card" data-category="bi gov">
             <div class="project-media-wrapper">
               <div class="project-media-grid">
-                <img src="assets/images/workforce-p1.jpg" alt="Workforce Planning: Strategic Headcount and Age Demographics Overview" class="project-thumb">
-                <img src="assets/images/workforce-p2.jpg" alt="Workforce Planning: Salary Benchmark Gaps vs ONS ASHE Median" class="project-thumb">
+                <img src="assets/images/workforce-p1.jpg" alt="Strategic Workforce Overview and Headcount Demographics" class="project-thumb">
+                <img src="assets/images/workforce-p2.jpg" alt="Salary Benchmark Gaps vs ONS ASHE Median" class="project-thumb">
               </div>
               <span class="zoom-badge">Click image to enlarge</span>
             </div>
             <div class="project-body">
-              <div class="project-category">Power BI • Labour Intelligence • ONS Data</div>
+              <div class="project-meta">
+                <span class="project-code-tag">SYSTEM 03 // LABOUR MARKET INTEL</span>
+                <span class="mono" style="font-size: 0.78rem; color: var(--text-dim);">POWER BI / ONS APIS</span>
+              </div>
               <h3 class="project-title">Workforce Planning & Labour Market Intelligence</h3>
               <p class="project-summary">
-                An analytical database and reporting platform that benchmarks internal corporate staff rosters against national ONS ASHE salary distributions and live Adzuna vacancy listings across key UK shortage industries.
+                A Python data engineering pipeline and Power BI dashboard benchmarking internal corporate workforce rosters against national ONS ASHE earnings data and live Adzuna job postings across UK shortage sectors.
               </p>
-              <ul class="project-highlights">
-                <li>Ingested and combined official ONS earnings, regional vacancy indexes, and company HR lists into an analytical SQLite database.</li>
-                <li>Identified critical salary lags (-26.3% gap for London software developers) and highlighted departments facing 5-year retirement risks (41.0% in specialist engineering).</li>
-                <li>Built a 3-page Power BI report featuring custom DAX metrics for headcount, pay disparity, and succession readiness.</li>
+              <div class="project-callout-box">
+                <div class="callout-stat">-26.3%</div>
+                <div class="callout-label">Quantified London software developer salary lag and isolated a 41.0% 5-year retirement cliff in critical engineering roles.</div>
+              </div>
+              <ul class="project-bullets">
+                <li>Integrated ONS ASHE published medians, Nomis API wage indices, and Adzuna vacancy listings with internal HR data into a Star Schema.</li>
+                <li>Designed a 3-page Power BI dashboard in an executive UK Finance Slate theme with custom DAX measures for headcount, wage gaps, and succession risk.</li>
+                <li>Supported by 19 automated unit tests verifying schema assertions and KPI targets.</li>
               </ul>
               <div class="project-tags">
                 <span class="tag">Power BI</span>
@@ -179,33 +444,40 @@
                 <span class="tag">SQLite</span>
                 <span class="tag">ONS ASHE</span>
                 <span class="tag">Nomis API</span>
-                <span class="tag">Python</span>
+                <span class="tag">Python ETL</span>
               </div>
               <div class="project-footer">
-                <a href="https://github.com/WarWolf95/Workforce-Planning-Labour-Market-Intelligence" target="_blank" rel="noopener noreferrer" class="project-link" id="link-workforce">View Repository & Documentation &rarr;</a>
+                <a href="https://github.com/WarWolf95/Workforce-Planning-Labour-Market-Intelligence" target="_blank" rel="noopener noreferrer" class="project-link" id="link-repo-workforce">Inspect Repository on GitHub &rarr;</a>
               </div>
             </div>
           </article>
 
           <!-- Project 4: Credit Risk Scorecard -->
-          <article class="project-card" data-category="regulatory python">
+          <article class="project-card" data-category="py gov">
             <div class="project-media-wrapper">
               <div class="project-media-grid">
-                <img src="assets/images/credit-risk-roc.png" alt="Credit Risk Scorecard: ROC Curve Comparison (WoE vs LightGBM)" class="project-thumb">
+                <img src="assets/images/credit-risk-roc.png" alt="ROC Curve Comparison on Out-of-Time Test Data" class="project-thumb">
                 <img src="assets/images/credit-risk-score-dist.png" alt="Credit Scorecard Point Distribution for Good vs Defaulted Borrowers" class="project-thumb">
               </div>
               <span class="zoom-badge">Click image to enlarge</span>
             </div>
             <div class="project-body">
-              <div class="project-category">Risk Analytics • Credit Scorecards • Python</div>
+              <div class="project-meta">
+                <span class="project-code-tag">SYSTEM 04 // RISK SCORECARDS</span>
+                <span class="mono" style="font-size: 0.78rem; color: var(--text-dim);">POLARS / LIGHTGBM</span>
+              </div>
               <h3 class="project-title">Credit Risk Scorecard Modeling Pipeline</h3>
               <p class="project-summary">
-                A credit risk scoring pipeline trained on 2.26 million consumer loan records, structured around Basel II/III and UK regulatory credit governance standards.
+                A retail credit risk modeling and scorecard calibration pipeline trained on 2.26 million consumer loan records, structured around Basel II/III and UK regulatory credit governance principles.
               </p>
-              <ul class="project-highlights">
-                <li>Enforced strict data leakage controls, excluding all post-origination columns to mirror live application decisioning.</li>
+              <div class="project-callout-box">
+                <div class="callout-stat">~98%</div>
+                <div class="callout-label">Predictive power of an unconstrained LightGBM benchmark captured (Scorecard AUC: 0.710, KS: 31.5%) with 100% adverse action auditability.</div>
+              </div>
+              <ul class="project-bullets">
+                <li>Enforced strict data leakage controls, excluding all post-origination features so only application-time attributes were utilized.</li>
                 <li>Engineered monotonic Weight of Evidence (WoE) bins and Information Value (IV) rankings for feature selection.</li>
-                <li>Calibrated an integer scorecard using Points-to-Double-the-Odds (PDO=20), capturing ~98% of LightGBM's discriminative power (AUC 0.710, KS 31.5%) while ensuring complete linear explainability for adverse action notices.</li>
+                <li>Calibrated integer score points using Points-to-Double-the-Odds (PDO=20) anchored at 600 base score (50:1 odds).</li>
               </ul>
               <div class="project-tags">
                 <span class="tag">Python</span>
@@ -216,29 +488,36 @@
                 <span class="tag">Basel II / IRB</span>
               </div>
               <div class="project-footer">
-                <a href="https://github.com/WarWolf95/credit-risk-scorecard-pipeline" target="_blank" rel="noopener noreferrer" class="project-link" id="link-credit-risk">View Repository & Documentation &rarr;</a>
+                <a href="https://github.com/WarWolf95/credit-risk-scorecard-pipeline" target="_blank" rel="noopener noreferrer" class="project-link" id="link-repo-credit-risk">Inspect Repository on GitHub &rarr;</a>
               </div>
             </div>
           </article>
 
           <!-- Project 5: Electricity Price Forecasting -->
-          <article class="project-card" data-category="python">
+          <article class="project-card" data-category="py">
             <div class="project-media-wrapper">
               <div class="project-media-grid">
-                <img src="assets/images/electricity-crisis.png" alt="Crisis Period Forecast vs Actual Wholesale Electricity Prices" class="project-thumb">
+                <img src="assets/images/electricity-crisis.png" alt="Crisis Period Wholesale Price Forecast vs Actuals" class="project-thumb">
                 <img src="assets/images/electricity-series.png" alt="Wholesale Electricity Price Series (Jan 2020 - Jun 2025)" class="project-thumb">
               </div>
               <span class="zoom-badge">Click image to enlarge</span>
             </div>
             <div class="project-body">
-              <div class="project-category">Time Series • Market Analytics • Energy</div>
+              <div class="project-meta">
+                <span class="project-code-tag">SYSTEM 05 // TIME SERIES & NLP</span>
+                <span class="mono" style="font-size: 0.78rem; color: var(--text-dim);">PYTORCH / ELEXON BMRS</span>
+              </div>
               <h3 class="project-title">UK Wholesale Electricity Price Forecasting</h3>
               <p class="project-summary">
                 A market analytics pipeline examining UK wholesale electricity prices across 96,408 half-hourly intervals (2020–2025), fusing grid operations data with NLP financial sentiment.
               </p>
-              <ul class="project-highlights">
-                <li>Combined public data feeds from Elexon BMRS (generation mix and system demand) with Open-Meteo ERA5 weather and gas futures.</li>
-                <li>Analyzed over 8,000 financial news articles using FinBERT to assess whether geopolitical sentiment helped forecast price spikes during the 2022 energy crisis.</li>
+              <div class="project-callout-box">
+                <div class="callout-stat">~4%</div>
+                <div class="callout-label">MAE forecast improvement during the 2022 energy crisis using FinBERT-derived news sentiment shock features.</div>
+              </div>
+              <ul class="project-bullets">
+                <li>Combined public feeds from Elexon BMRS (generation mix and system demand) with Open-Meteo ERA5 weather and gas futures.</li>
+                <li>Scored financial news articles with FinBERT to assess whether geopolitical sentiment helped forecast price spikes during market stress.</li>
                 <li>Evaluated baseline ARIMA, XGBoost, and neural attention architectures across walk-forward and crisis holdout periods.</li>
               </ul>
               <div class="project-tags">
@@ -250,7 +529,7 @@
                 <span class="tag">Elexon BMRS</span>
               </div>
               <div class="project-footer">
-                <a href="https://github.com/WarWolf95/uk-electricity-price-forecasting" target="_blank" rel="noopener noreferrer" class="project-link" id="link-electricity">View Repository & Documentation &rarr;</a>
+                <a href="https://github.com/WarWolf95/uk-electricity-price-forecasting" target="_blank" rel="noopener noreferrer" class="project-link" id="link-repo-electricity">Inspect Repository on GitHub &rarr;</a>
               </div>
             </div>
           </article>
@@ -259,18 +538,19 @@
       </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="section" id="experience">
+    <!-- Module 0X4 - Timeline & Credentials -->
+    <section class="section" id="timeline">
       <div class="container">
         <div class="section-header">
-          <div class="section-label">Work History</div>
-          <h2 class="section-title">Professional Experience</h2>
+          <span class="section-module-tag">04 // PROFESSIONAL TRAJECTORY</span>
+          <h2 class="section-title">Experience & Education</h2>
           <p class="section-subtitle">
-            6.5+ years of production experience in analytics, reporting, and client operations.
+            Over 6.5 years in enterprise data analytics, reporting, and operational leadership.
           </p>
         </div>
 
         <div class="timeline">
+          <!-- Timeline Item 1 -->
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
@@ -279,132 +559,92 @@
                   <h3 class="role-title">Data Associate Lead - Analytics & Client Operations</h3>
                   <div class="company-name">Numerator</div>
                 </div>
-                <div class="role-duration">April 2018 – November 2024 (6.5+ Years)</div>
+                <div class="role-duration">APR 2018 – NOV 2024 (6.5+ YEARS)</div>
               </div>
               <p class="timeline-summary">
-                Numerator is a US-based consumer market intelligence company providing retail analytics and brand tracking to enterprise retail clients.
+                Numerator is a US-based consumer intelligence firm providing market data and retail analytics to enterprise brands.
               </p>
               <ul class="timeline-bullets">
                 <li>Automated operational data workflows using Python scripts and scheduled MySQL queries, cutting turnaround times by 35% and enabling same-day reporting refreshes.</li>
                 <li>Built interactive Power BI dashboards with custom DAX calculations and dimensional data models, delivering consumer purchasing insights that improved client contract retention by 12% across 15 enterprise retail accounts.</li>
                 <li>Served as primary analytics liaison for 15+ enterprise retail accounts, translating business questions into reporting deliverables and managing data quality issues through JIRA and Salesforce (98%+ satisfaction rate).</li>
-                <li>Standardized quality assurance procedures and automated data checks across production reporting workflows, reducing downstream data discrepancies by 15%.</li>
-                <li>Optimized complex MySQL queries across multi-million-row transactional datasets, improving query execution speeds by 30%.</li>
+                <li>Standardized quality assurance procedures and automated data checks across production reporting workflows, reducing downstream reporting discrepancies by 15%.</li>
+                <li>Optimized complex MySQL queries across multi-million-row transactional datasets, improving report query execution speeds by 30%.</li>
                 <li>Mentored and coached a team of 4 junior analysts on SQL query writing, dashboard development, and QA standards, raising team throughput by 25%.</li>
-                <li>Recognized with Star Performer, Spot Award, and High Impact Award for accuracy, dedication, and leadership.</li>
+                <li>Awarded Star Performer, Spot Award, and High Impact Award for accuracy, dedication, and leadership.</li>
               </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">MSc in Data Science</h3>
+                  <div class="company-name">Coventry University, United Kingdom</div>
+                </div>
+                <div class="role-duration">2025 – 2026</div>
+              </div>
+              <p class="timeline-summary">
+                Advanced academic coursework in statistical modeling, machine learning, predictive analytics, and data governance frameworks.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Elected Course Representative for the MSc Data Science cohort (2025–2026), serving as liaison between students and faculty.</li>
+                <li>Applied research focused on multimodal energy forecasting and LLM-assisted analytical pipelines.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">BEng in Electrical Engineering</h3>
+                  <div class="company-name">Gujarat Technological University, India</div>
+                </div>
+                <div class="role-duration">2013 – 2017</div>
+              </div>
+              <p class="timeline-summary">
+                Strong undergraduate quantitative training in applied mathematics, numerical analysis, calculus, and system modeling.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="section" id="skills">
+    <!-- Module 0X5 - Connect & Terminal Footer -->
+    <section class="section" id="connect">
       <div class="container">
-        <div class="section-header">
-          <div class="section-label">Toolkit</div>
-          <h2 class="section-title">Technical Skills</h2>
-          <p class="section-subtitle">
-            Tools, technologies, and analytical methods used across daily reporting and project workflows.
+        <div class="connect-card">
+          <span class="section-module-tag" style="justify-content: center;">05 // CONTACT & COLLABORATION</span>
+          <h2 class="connect-title">Ready to Deliver Data Impact</h2>
+          <p class="connect-desc">
+            Open to Senior Data Analyst, BI Developer, and Analytics Specialist roles across the UK. Equipped with full-time UK work rights under the Graduate Route (no visa sponsorship required).
           </p>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3 class="skill-card-title">BI & Dashboarding</h3>
-            <ul class="skill-list">
-              <li>Power BI Desktop</li>
-              <li>Advanced DAX Calculations</li>
-              <li>Power Query (M Language)</li>
-              <li>Star Schema Data Modeling</li>
-              <li>Excel (Power Pivot, VBA, Formulas)</li>
-              <li>Tableau</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h3 class="skill-card-title">Databases & SQL</h3>
-            <ul class="skill-list">
-              <li>MySQL (CTEs, Window Functions)</li>
-              <li>PostgreSQL</li>
-              <li>SQLite & DuckDB</li>
-              <li>Query Performance Tuning</li>
-              <li>Relational Data Modeling</li>
-              <li>Database Migration (DDL/DML)</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h3 class="skill-card-title">Python & Automation</h3>
-            <ul class="skill-list">
-              <li>Polars & Pandas</li>
-              <li>NumPy & SciPy</li>
-              <li>Scikit-Learn</li>
-              <li>Statsmodels</li>
-              <li>Matplotlib & Seaborn</li>
-              <li>REST API Ingestion & Requests</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h3 class="skill-card-title">Quality & Governance</h3>
-            <ul class="skill-list">
-              <li>Data Quality Auditing</li>
-              <li>SLA Tracking & Compliance</li>
-              <li>UK GDPR & Data Protection Act 2018</li>
-              <li>FCA Consumer Duty (PS22/9)</li>
-              <li>Git & GitHub Actions (CI/CD)</li>
-              <li>Automated Unit Testing (pytest)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="section" id="education">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-label">Academic Background</div>
-          <h2 class="section-title">Education & Certifications</h2>
-        </div>
-
-        <div class="skills-grid" style="grid-template-columns: repeat(2, 1fr);">
-          <div class="skill-card">
-            <h3 class="skill-card-title">MSc in Data Science</h3>
-            <p style="color: var(--brand-light); font-weight: 600; margin-bottom: 6px;">Coventry University, United Kingdom (2026)</p>
-            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 12px;">
-              Covered statistical modeling, predictive analytics, machine learning, and data governance. Elected Course Representative for the MSc Data Science cohort (2025–2026).
-            </p>
-          </div>
-
-          <div class="skill-card">
-            <h3 class="skill-card-title">BEng in Electrical Engineering</h3>
-            <p style="color: var(--brand-light); font-weight: 600; margin-bottom: 6px;">Gujarat Technological University, India (2017)</p>
-            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 12px;">
-              Strong foundation in quantitative mathematics, calculus, linear systems, and analytical problem-solving.
-            </p>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">
-              <strong>Certification:</strong> Google Data Analytics Professional Certificate
-            </p>
+          <div class="connect-buttons">
+            <a href="https://github.com/WarWolf95" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-footer-github">GitHub Repositories</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-footer-linkedin">LinkedIn Profile</a>
+            <a href="mailto:maulik.workstuff@gmail.com" class="btn btn-outline" id="btn-footer-email">maulik.workstuff@gmail.com</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container footer-content">
-      <div class="footer-info">
-        <h4>Maulik Parmar</h4>
-        <p>Data Analyst & BI Developer • London, United Kingdom</p>
+      <div>
+        <span class="mono" style="color: var(--text-main); font-weight: 700;">MAULIK PARMAR</span>
+        <span> — DATA ANALYST & BI DEVELOPER</span>
       </div>
-      <div class="footer-links">
-        <a href="https://github.com/WarWolf95" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="#hero">Back to Top &uarr;</a>
+      <div>
+        <span class="mono">LONDON, UK • © 2026 • MIT LICENSE</span>
       </div>
     </div>
   </footer>
